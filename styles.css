@@ -1,0 +1,57 @@
+.widget-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Sets the width of the bar itself */
+    margin: 0 auto;
+    padding: 20px; /* Changes the vertical position inside the width/height box */
+    height: 12px; /* Specific height for the widget container */
+  }
+  
+  .fill-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #8dacbb; /* Color that fills the bar, change hex value */
+    width: 0px;
+    z-index: 0;
+  }
+  
+  .widget-bar {
+    position: relative; /* Add position relative */
+    background-color: #FFFFFF; /* Changes the background color of the bar */
+    color: #000000; /* Color of the text inside the bar */
+    font-family: 'Rubik', sans-serif; /* Change font name here */
+    font-size: 16px; /* Font size */
+    text-align: center;
+    padding: 10px; /* Change the girth of the bar */
+    border: 4px solid #000000; /* Change border thickness here */
+    border-radius: 10px; /* Changes the roundness of the corners */
+    z-index: -1; /* Sets it to the back layer */
+    font-weight: bold;
+    height: 100%; /* Set the same height as the container */
+  }
+  
+  .left-text {
+    position: absolute;
+    left: 5px; /* Pixel distance from left side */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .middle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .right-text {
+    position: absolute;
+    right: 5px; /* Pixel distance from right side */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
